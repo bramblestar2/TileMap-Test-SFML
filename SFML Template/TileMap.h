@@ -22,7 +22,5 @@ private:
 
 	int m_world_width;
 	int m_world_height;
-
-	Tile*** m_world;
 };
 

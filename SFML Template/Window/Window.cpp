@@ -27,8 +27,6 @@ void Window::render()
 {
 	window->clear();
 
-	window->draw(sf::Sprite(*m_texture_handler.getTexture("grass")));
-
 	window->display();
 }
 
