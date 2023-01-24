@@ -3,6 +3,8 @@
 Window::Window()
 {
 	initWindow();
+
+	m_texture_handler.loadTexture("grass", "Textures/grass.png");
 }
 
 Window::~Window()
@@ -24,6 +26,8 @@ void Window::run()
 void Window::render()
 {
 	window->clear();
+
+	window->draw(sf::Sprite(*m_texture_handler.getTexture("grass")));
 
 	window->display();
 }

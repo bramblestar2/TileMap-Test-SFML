@@ -137,9 +137,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="TextureHandler.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TileChunk.cpp" />
+    <ClCompile Include="TileMap.cpp" />
     <ClCompile Include="Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="TextureHandler.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TileChunk.h" />
+    <ClInclude Include="TileMap.h" />
     <ClInclude Include="Window\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
