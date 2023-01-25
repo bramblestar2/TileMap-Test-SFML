@@ -44,5 +44,7 @@ private:
 
 	float m_break_resistence;
 	float m_break_percentage;
+
+	friend std::ostream& operator<<(std::ostream& out, Tile& data);
 };
 

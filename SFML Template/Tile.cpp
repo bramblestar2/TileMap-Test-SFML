@@ -104,3 +104,14 @@ void Tile::draw(sf::RenderTarget& target, const sf::RenderStates& states)
 	if (!m_invisible)
 		target.draw(m_sprite, states);
 }
+
+std::ostream& operator<<(std::ostream& out, Tile& data)
+{
+	out << data.m_num_id << " " << data.m_tile_id << " " << data.m_tile_size.x << " " <<
+		data.m_tile_size.y << " " << data.m_location.x << " " << data.m_location.y << " " << 
+		data.m_passthrough << " " << data.m_invisible << " " << data.m_unbreakable << " " << 
+		data.m_broken << " " << data.m_break_resistence << " " << data.m_break_percentage;
+
+	return out;
+	// TODO: insert return statement here
+}
